@@ -25,7 +25,7 @@
         <!-- <img src="assets/logo.svg" alt="UI Clobe" class="content__logo"> -->
         <img src="assets/google-logo.svg" alt="UI Clobe" class="content__logo">
 
-        <input type="text" class="content__search">
+        <input type="text" class="content__search" id="enter">
 
         <div class="content__offer">
             Made with 💜 by 
@@ -44,5 +44,15 @@
             <a>Terms</a>
         </div>
     </footer>
+
+    <script>
+        const inputEle = document.getElementById('enter');
+        inputEle.addEventListener('keyup', function(e){
+            var key = e.which || e.keyCode;
+            if (key == 13) { // codigo da tecla enter
+                window.location.href = `https://www.google.com/search?q=${this.value}&oq=${this.value}&aqs=chrome..69i57j0i67l4j0l2.1975j0j1&sourceid=chrome&ie=UTF-8`
+            }
+        });
+    </script>
 </body>
 </html>
