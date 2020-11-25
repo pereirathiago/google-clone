@@ -133,7 +133,7 @@ footer {
 }
 
 .footer__section:not(:first-child) {
-    border-top: 1px solid #e4e4e4;
+    border-top: 2px solid #e4e4e4;
 }
 
 .footer__location {
@@ -159,11 +159,28 @@ footer {
 /* Media Query */
 
 @media(min-width:768px) {
+    /* main */
     .content {
-        padding-top: 120px;
+        padding-top: 150px;
     }
 
     .content__logo {
         height: 150px;
+    }
+
+    .content__search {
+        width: 50%;
+        height: 30px;
+    }
+
+    /* footer */
+
+    .footer__section {
+        justify-content: space-between;
+    }
+
+    .footer__location,
+    .footer__links {
+        border-top: 1px solid #e4e4e4;
     }
 }
