@@ -79,6 +79,7 @@ button {
 
 .content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 56px 8px 0;
     align-items: center;
@@ -110,4 +111,17 @@ button {
 .content__offer a {
     text-decoration: none;
     color: #1967d2;
+}
+
+/* footer */
+
+footer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.footer__section:not(:first-child) {
+    border-top: 1px solid #e4e4e4;
 }
