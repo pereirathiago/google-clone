@@ -54,6 +54,10 @@ body {
     border-bottom: 2px solid #4285f4;
 }
 
+#gmail {
+    display: none;
+}
+
 .menu__link:not(.active) {
     margin-bottom: 2px;
 }
@@ -156,9 +160,45 @@ footer {
     margin-left: 27px;
 }
 
+.footer__links .left {
+    display: none;
+}
+
 /* Media Query */
 
 @media(min-width:768px) {
+    /* header */
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .menu__section.right {
+        margin-right: 10px;
+    }
+
+    .menu__icon.burger {
+        display: none;
+    }
+
+    .menu__profile {
+        margin-top: 10px;
+    }
+
+    .menu__link {
+        margin-top: 4.5px;
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+
+    #all {
+        display: none;
+    }
+
+    #gmail {
+        display: block;
+    }
+
     /* main */
     .content {
         padding-top: 150px;
@@ -182,5 +222,14 @@ footer {
     .footer__location,
     .footer__links {
         border-top: 1px solid #e4e4e4;
+    }
+
+    .footer__links {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer__links .left {
+        display: block;
     }
 }
